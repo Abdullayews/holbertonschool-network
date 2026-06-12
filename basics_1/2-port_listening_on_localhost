@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Set a listing port using netcat
+nc -l -p 98
