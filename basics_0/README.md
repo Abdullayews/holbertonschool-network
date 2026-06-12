@@ -1,47 +1,60 @@
-# Networking Basics #0
+<div align="center">
 
-## Project Overview
+# 🌐 Networking basics #0
 
-This project covers the fundamental concepts of networking, focusing on understanding the OSI model, different types of networks, IP addressing, and key networking protocols such as TCP and UDP. By the end of this project, you will be able to explain these concepts clearly and apply them in practical scenarios.
+**OSI layers, LAN vs WAN, MAC vs IP, TCP vs UDP — the invisible wiring, explained.**
 
-## Learning Objectives
+[![Bash](https://img.shields.io/badge/Bash-5.x-4EAA25?style=flat-square&logo=gnu-bash&logoColor=white)](https://www.gnu.org/software/bash/)
+[![Networking](https://img.shields.io/badge/Networking-TCP%2FIP-005C84?style=flat-square)](#)
+[![Holberton](https://img.shields.io/badge/Holberton-Foundations-E44D26?style=flat-square)](https://www.holbertonschool.com)
 
-By completing this project, you will be able to:
-
-- Explain the OSI model, its layers, and how it is organized.
-- Differentiate between LAN, WAN, and the Internet.
-- Understand IP addresses, including the differences between public and private addresses, and the importance of IPv6.
-- Describe what localhost and subnets are.
-- Compare TCP and UDP, and know the main differences between these protocols.
-- Recognize important TCP/UDP port numbers, specifically for SSH, HTTP, and HTTPS.
-- Use networking tools like `ping` and `netstat` to diagnose network connectivity.
-
-## Requirements
-
-- **General**:
-  - Allowed editors: `vi`, `vim`, `emacs`.
-  - All Bash script files will be interpreted on Ubuntu 20.04 LTS.
-  - All files should end with a new line.
-  - A `README.md` file is mandatory in the root of the project folder.
-  - All Bash script files must be executable.
-  - Scripts must pass `shellcheck` without errors.
-  - The first line of all Bash scripts should be `#!/usr/bin/env bash`.
-  - The second line of all Bash scripts should be a comment explaining what the script does.
-
-## Tasks
-
-| Task No | Task Name                  | Description                                                                                             | File Name                      | Points |
-| ------- | -------------------------- | ------------------------------------------------------------------------------------------------------- | ------------------------------ | ------ |
-| 0       | OSI model                  | Explain the OSI model and its organization.                                                             | `0-OSI_model`                  | 2      |
-| 1       | Types of network           | Differentiate between LAN, WAN, and Internet based on use case and geographical scope.                  | `1-types_of_network`           | 3      |
-| 2       | MAC and IP address         | Explain the concepts of MAC and IP addresses and their roles in networking.                             | `2-MAC_and_IP_address`         | 2      |
-| 3       | UDP and TCP                | Compare the characteristics and uses of TCP and UDP.                                                    | `3-UDP_and_TCP`                | 3      |
-| 4       | TCP and UDP ports          | Write a Bash script to display listening TCP/UDP ports and their associated PIDs.                       | `4-TCP_and_UDP_ports`          | 1      |
-| 5       | Is the host on the network | Write a Bash script to ping an IP address passed as an argument to check if the host is on the network. | `5-is_the_host_on_the_network` | 1      |
-
-## Repository
-
-- **GitHub repository**: `holbertonschool-network`
-- **Directory**: `basics_0`
+</div>
 
 ---
+
+## 📖 About this project
+
+Before you configure a network, you have to *speak* network. This project is
+concept-first: the OSI model layer by layer, the difference between a LAN,
+a WAN and the Internet, what a MAC address is versus an IP address, and why
+TCP and UDP exist as opposites — reliability versus speed.
+
+Each question is answered in its own file, and the practical part closes
+with a Bash script that answers the only question that matters in the
+field: *is this host actually on the network?* (`ping`)
+
+## 🎯 Concepts covered
+
+- The OSI model — 7 layers, who lives where
+- LAN, WAN, and the Internet — scale and ownership
+- MAC address vs IP address — physical vs logical
+- TCP vs UDP — the reliability/speed trade-off
+- Well-known ports: SSH (22), HTTP (80), HTTPS (443)
+- `ping` and `netstat` — the field diagnosis kit
+
+## 📂 Files
+
+| File | What it does |
+|---|---|
+| [`0-OSI_model`](https://github.com/Abdullayews/holbertonschool-network/tree/main/basics_0/0-OSI_model) | Answer: the 7 layers, from physical bits to applications |
+| [`1-types_of_network`](https://github.com/Abdullayews/holbertonschool-network/tree/main/basics_0/1-types_of_network) | Answer: LAN vs WAN vs the Internet |
+| [`2-MAC_and_IP_address`](https://github.com/Abdullayews/holbertonschool-network/tree/main/basics_0/2-MAC_and_IP_address) | Answer: what each address identifies and where it lives |
+| [`3-UDP_and_TCP`](https://github.com/Abdullayews/holbertonschool-network/tree/main/basics_0/3-UDP_and_TCP) | Answer: the two transport protocols, compared |
+| [`4-TCP_and_UDP_ports`](https://github.com/Abdullayews/holbertonschool-network/tree/main/basics_0/4-TCP_and_UDP_ports) | Answer: ports — SSH 22, HTTP 80, HTTPS 443 |
+| [`5-is_the_host_on_the_network`](https://github.com/Abdullayews/holbertonschool-network/tree/main/basics_0/5-is_the_host_on_the_network) | Bash: pings an IPv4 and reports reachability |
+
+## ⚙️ Requirements
+
+- 🐧 Ubuntu 20.04 LTS
+- 📝 Answers written in text files, one per question
+- 🧹 Bash scripts pass Shellcheck, start with `#!/usr/bin/env bash`
+
+## 🚀 Try it yourself
+
+```bash
+./5-is_the_host_on_the_network 8.8.8.8    # ping-based reachability check
+```
+
+---
+
+✍️ **Muhəmməd Abdullayev** · [![GitHub](https://img.shields.io/badge/@Abdullayews-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Abdullayews) · one of the projects in **[holbertonschool-network](../README.md)**
